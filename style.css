@@ -1,0 +1,122 @@
+@font-face {
+    font-family:Myfont ;
+    src: url(./assets/font/Roboto-Regular.ttf);
+}
+
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: Myfont;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    min-height:100vh;
+    background-color: #242742;
+    
+
+}
+.card{
+    display: flex;
+    width:700px;
+    background-color: #ffffff;
+    border-radius:20px;
+    Padding:10px;
+}
+.right{
+  width:60%;}
+.left{
+    width: 40%;
+    
+}
+h1{
+    font-size:40px;
+}
+.left img{
+    width:100%;
+}
+ul{
+    list-style-image: url(./assets/images/icon-list.svg);
+}
+li{
+    margin-top: 10px;
+}
+label{
+    margin-bottom: 10px;
+   
+}
+form{
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+  
+}
+input{
+    padding:10px 20px;
+    font-family: inherit;
+    border-radius: 5px;
+    outline: none;
+    border:1px solid #9294a0;
+}
+button{
+    font-family: inherit;
+    margin-top:10px;
+    padding: 10px 10px;
+    border-radius: 5px;
+    outline:none;
+    background-color:#242742 ;
+    border:none;
+    color:#ffffff;
+    cursor: pointer;
+} 
+button:hover{
+    background-color: chocolate;
+    transition: all is;
+}
+.hide{
+    display: none;
+}
+.page{
+    background-color: #ffffff;
+    width:400px;
+    padding:40px;
+    border-radius: 5px;
+}
+.page h1{
+    font-size: 20px;
+}
+.page img{
+    width:40px;
+}
+.page button{
+    width:100%;
+    
+}
+@media(max-width:760px){
+    .card{
+      flex-direction: column-reverse;  
+      width:300px;
+      padding: 0px;
+    }
+    body{
+        padding: 0px;
+        margin:0px;
+    }
+    .card h1{
+        font-size:30px;
+    
+    }
+    .right{
+        width:80%;
+        padding: 10px;
+       
+    }
+    .left{
+        width:100%;
+    }
+    form{
+        width:90%;
+        padding: 20px;
+
+    }
+}
